@@ -1,0 +1,56 @@
+{
+  "name": "termagotchi",
+  "displayName": "termagotchi",
+  "description": "TermaGotchi is a terminal styled pet that feeds of of the user typing. if you don't type enough within a certain timespan it dies",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "termagotchi.termagotchi",
+      "title": "Start Termagotchi"
+    }],
+    "configuration": {
+      "title": "Termagotchi",
+      "properties": {
+        "termagotchi.lifetimeMinutesMain": {
+          "type": "number",
+          "default": 1,
+          "minimum": 0,
+          "description": "Minutes for the main pet to fully drain. Set to 0 to disable decay."
+        },
+        "termagotchi.lifetimeMinutesCommit": {
+          "type": "number",
+          "default": 60,
+          "minimum": 0,
+          "description": "Minutes for Commit Crab to fully drain. Set to 0 to disable decay."
+        },
+        "termagotchi.lifetimeMinutesPaste": {
+          "type": "number",
+          "default": 30,
+          "minimum": 0,
+          "description": "Minutes for Paste Pal to fully drain. Set to 0 to disable decay."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.109.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.2",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}

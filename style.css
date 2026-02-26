@@ -1,0 +1,236 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: monospace;
+ }
+
+ body {
+     background-color: #171717;
+     color: white;
+ }
+
+ .petName {
+     font-size: 4vw;
+     text-align: center;
+ }
+
+ .paragraph {
+     font-size: 2.35vw;
+     text-align: center;
+ }
+
+ .paragraphSmall {
+     font-size: 1.6vw;
+     text-align: center;
+     opacity: 0.8;
+     margin-top: 10px;
+ }
+
+ .nameYourPet {
+     height: 80vh;
+     width: 80vw;
+     border: 3px white dashed;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .holder {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     width: 100%;
+ }
+
+ .input {
+     width: 55vw;
+     height: 50px;
+     margin-top: 50px;
+     border: white dashed 3px;
+     background-color: inherit;
+     color: white;
+     padding: 15px;
+     font-size: 20px;
+ }
+
+ .input:focus {
+     outline: none;
+ }
+
+ .button {
+     width: 55vw;
+     height: 50px;
+     margin-top: 20px;
+     border: white dashed 3px;
+     background-color: inherit;
+     color: white;
+     font-size: 20px;
+
+ }
+
+.buttonSecondary {
+    width: 220px;
+    height: 44px;
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+
+ .petScreen {
+     height: 80vh;
+     width: 80vw;
+     border: 3px white dashed;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 18px;
+     padding: 30px;
+     position: relative;
+ }
+
+.hidden {
+    display: none !important;
+}
+
+ .petTitle {
+     font-size: 4vw;
+     text-align: center;
+ }
+
+ .petTitleClickable {
+     cursor: pointer;
+ }
+
+ .petTitleClickable:hover {
+     text-decoration: underline;
+     text-decoration-thickness: 3px;
+ }
+
+ .petImageWrap {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+ }
+
+ .petImage {
+     width: 220px;
+     height: 220px;
+     image-rendering: pixelated;
+     border: 3px white dashed;
+     background: #101010;
+ }
+
+ .bars {
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+     width: 70%;
+ }
+
+ .barRow {
+     display: grid;
+     grid-template-columns: 90px 1fr;
+     align-items: center;
+     gap: 12px;
+ }
+
+ .barLabel {
+     font-size: 18px;
+ }
+
+ .bar {
+     height: 18px;
+     border: 2px white dashed;
+     background: #0d0d0d;
+ }
+
+ .barFill {
+     height: 100%;
+     background: #f0f0f0;
+     width: 0%;
+     transition: width 0.2s ease;
+ }
+
+ .petHint {
+     font-size: 16px;
+     opacity: 0.8;
+     text-align: center;
+ }
+
+.resetWrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#resetButton:hover{
+    color: red;
+    border: red dashed 3px;
+}
+
+ .petMeta {
+     display: flex;
+     gap: 10px;
+     align-items: center;
+     font-size: 16px;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     opacity: 0.8;
+ }
+
+ .petMetaTop {
+     position: absolute;
+     top: 18px;
+     right: 24px;
+ }
+
+ .petMetaLabel {
+     opacity: 0.7;
+ }
+
+ .petNav {
+     width: 100%;
+     position: absolute;
+     inset: 0;
+     pointer-events: none;
+ }
+
+ .navButton {
+     width: 60px;
+     height: 44px;
+     border: 3px white dashed;
+     background: inherit;
+     color: white;
+     font-size: 22px;
+     cursor: pointer;
+     pointer-events: auto;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+ }
+
+ .navButtonLeft {
+     left: 18px;
+ }
+
+ .navButtonRight {
+     right: 18px;
+ }
+
+ .petBadge {
+     font-size: 14px;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+     opacity: 0.7;
+     position: absolute;
+     top: 18px;
+     left: 50%;
+     transform: translateX(-50%);
+ }
