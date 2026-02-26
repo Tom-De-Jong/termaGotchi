@@ -17,17 +17,13 @@ The extension includes minor customizability (maybe more in the future), multipl
 
 in package.json are a few options heres what they each do!
 
-
-
+```
        "type": "number",
-
 ==>    "default": 1,
-
        "minimum": 0,
-
        "description": "Minutes for said pet to fully drain. Set to 0 to disable decay."
+```
 
-       
 
 for each pet you can change the time in minutes that they decay so if i set the number with the arrow to 15 the pet dies in 15 minute if you don't do anything.
 
